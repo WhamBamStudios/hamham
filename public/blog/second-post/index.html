@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+	<head id="head">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#081426">
+		<title>hamham — Game Devlog</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&amp;display=swap">
+		<link rel="stylesheet" href="/hamham/style.css">
+		<link rel="stylesheet" href="/hamham/highlight.css">
+		<!-- math rendering -->
+		<link rel="stylesheet" href="/hamham/Temml-Local.css">
+		<script defer src="/hamham/temml.min.js"></script>
+		<script defer src="/hamham/render-mathtex.js"></script>
+		<!-- /math rendering -->
+		
+	<style>
+		#prev-next {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			margin-top: 40px;
+		}
+		
+		figure {
+			align-self: center;
+			text-align: center;
+			font-style: italic;
+		}
+		
+		.post {
+			display:flex;
+			flex-direction: column;
+		}
+	</style>
+
+	</head>
+	<body id="body">
+		<header class="site-header">
+			<div class="header-inner">
+				<h1 class="visually-hidden">WHAM! BAM! HAM-HAM! — game development log</h1>
+				<!-- Filename prefix is the draw order; keep each layer's z-index in sync. -->
+				<div class="splash-stage" aria-hidden="true">
+					<img class="splash-layer splash-blast" data-draw-order="0" style="--draw-order: 0" src="/hamham/CompanySplash/0_Blast.png" alt="" fetchpriority="high">
+					<img class="splash-layer splash-mascot" data-draw-order="1" style="--draw-order: 1" src="/hamham/CompanySplash/1_Mascot.png" alt="">
+					<img class="splash-layer splash-wham" data-draw-order="2" style="--draw-order: 2" src="/hamham/CompanySplash/2_WHAM.png" alt="">
+					<img class="splash-layer splash-bam" data-draw-order="3" style="--draw-order: 3" src="/hamham/CompanySplash/3_BAM.png" alt="">
+					<img class="splash-layer splash-studios" data-draw-order="5" style="--draw-order: 5" src="/hamham/CompanySplash/5_StudiosText.png" alt="">
+				</div>
+				<div class="header-copy">
+					<p class="eyebrow">The ham-ham devlog</p>
+					<p class="tagline">Punchy little game. Big ideas. Follow the build.</p>
+				</div>
+			</div>
+		</header>
+		<div id="banner">
+			<div class="banner-inner">
+				<span class="banner-note">Builds, blunders &amp; tiny victories.</span>
+				<span class="repo-link repo-link-disabled" aria-disabled="true">Game not hosted yet</span>
+			</div>
+		</div>
+		<div class="wrapper">
+			<nav class="site-nav" aria-label="Main navigation">
+				<p class="nav-heading">Game menu</p>
+				<ul>
+					<li><a href="/hamham/">Home</a></li>
+					<li><a href="/hamham/about/">About</a></li>
+					
+						<li><a href="/hamham/devlog/2026/">Latest devlog</a></li>
+					
+					<li><a href="/hamham/devlog/">Archive</a></li>
+				</ul>
+			</nav>
+			<section id="content" class="page-content">
+				
+	<h1>Second Post</h1>
+	<div class="post"><p>This second post is mainly here to show you that you can also create single file posts for convenience. The first post contains more interesting content.</p><p>Don’t forget to read <a href="https://zine-ssg.io/docs/supermd/">the official SuperMD docs</a> to know how to <em>style</em> your content.</p><h1>Math</h1><p>Btw this sample website also includes the JS/CSS dependencies required to render math:</p><script type="math/tex">\begin{aligned}
+f(t) &= \int_{-\infty}^\infty F(\omega) \cdot (-1)^{2 \omega t} \mathrm{d}\omega \\
+F(\omega) &= \int_{-\infty}^\infty f(t) \div (-1)^{2 \omega t} \mathrm{d}t \\
+\end{aligned}
+</script><p>This: <script type="math/tex">(-1)^x = \cos(\pi x) + i\sin(\pi x)</script> is an inline equation instead!</p><h1>Code blocks</h1><pre><code class="zig"><span class="comment_documentation comment spell">/// Shaper that uses CoreText.</span>
+<span class="comment_documentation comment spell">///</span>
+<span class="comment_documentation comment spell">/// CoreText shaping differs in subtle ways from HarfBuzz so it may result</span>
+<span class="comment_documentation comment spell">/// in inconsistent rendering across platforms. But it also fixes many</span>
+<span class="comment_documentation comment spell">/// issues (some macOS specific):</span>
+<span class="comment_documentation comment spell">///</span>
+<span class="comment_documentation comment spell">///   - Theta hat offset is incorrect in HarfBuzz but correct by default</span>
+<span class="comment_documentation comment spell">///     on macOS applications using CoreText. (See:</span>
+<span class="comment_documentation comment spell">///     https://github.com/harfbuzz/harfbuzz/discussions/4525)</span>
+<span class="comment_documentation comment spell">///</span>
+<span class="comment_documentation comment spell">///   - Hyphens (U+2010) can be synthesized by CoreText but not by HarfBuzz.</span>
+<span class="comment_documentation comment spell">///     See: https://github.com/mitchellh/ghostty/issues/1643</span>
+<span class="comment_documentation comment spell">///</span>
+<span class="keyword_modifier">pub</span> <span class="keyword">const</span> <span class="constant variable_builtin type variable">Shaper</span> <span class="operator">=</span> <span class="keyword_type">struct</span> <span class="punctuation_bracket">{</span>
+    <span class="comment_documentation comment spell">/// The allocated used for the feature list, font cache, and cell buf.</span>
+    <span class="constant variable_builtin type variable_member variable">alloc</span><span class="punctuation_delimiter">:</span> <span class="constant variable_builtin type variable">Allocator</span><span class="punctuation_delimiter">,</span>
+
+    <span class="comment_documentation comment spell">/// The string used for shaping the current run.</span>
+    <span class="constant variable_builtin type variable_member variable">run_state</span><span class="punctuation_delimiter">:</span> <span class="constant variable_builtin type variable">RunState</span><span class="punctuation_delimiter">,</span>
+
+    <span class="comment_documentation comment spell">/// CoreFoundation Dictionary which represents our font feature settings.</span>
+    <span class="constant variable_builtin type variable_member variable">features</span><span class="punctuation_delimiter">:</span> <span class="operator">*</span><span class="constant variable_builtin type variable">macos</span><span class="punctuation_delimiter">.</span><span class="constant variable_builtin type variable_member variable">foundation</span><span class="punctuation_delimiter">.</span><span class="constant variable_builtin type variable_member variable">Dictionary</span><span class="punctuation_delimiter">,</span>
+<span class="comment_documentation comment spell">// ...</span>
+</code></pre>
+<p>If you open the web inspector on the code below, you will see that the code has been correctly tagged for syntax highlighting, but it’s currently on you to come up with CSS definitions for styling each class.</p></div>
+	<div id="prev-next">
+		<div>
+			<a href="/hamham/blog/first-post/">
+				←
+				<span>First Post: What&apos;s A Zine?</span>
+			</a>
+		</div>
+		<div></div>
+	</div>
+
+			</section>
+		</div>
+		<footer>
+			<p>Small game. Big swings. Built with <a href="https://zine-ssg.io/">Zine</a> and published on GitHub Pages.</p>
+			<p>Arcade styling tipped its hat to the <a href="https://github.com/pages-themes/leap-day">Leap Day theme</a>.</p>
+		</footer>
+	</body>
+</html>

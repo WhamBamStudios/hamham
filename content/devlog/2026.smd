@@ -1,0 +1,14 @@
+---
+.title = "Devlog - 2026",
+.date = .date("2026-01-01T00:00:00"),
+.layout = "devlog.shtml",
+---
+[]($section.id('about'))
+# About this Devlog
+
+This is the development log for hamham: short updates on progress, experiments, and decisions as the game takes shape.
+
+You can [subscribe via RSS]($link.page('devlog').alternative('rss')) or browse the [devlog archive]($link.page('devlog')).
+
+## [The devlog begins]($section.id("2026-10-09T00:00:00"))
+The hamham devlog is open. I’ll use this space for concise updates as development continues.

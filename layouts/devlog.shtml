@@ -23,16 +23,16 @@
 			
 			0%,
 			100% {
-				background-color: #222;
+				background-color: transparent;
 			}
 			
 			50% {
-				background-color: #111;
+				background-color: rgb(255 101 0 / 18%);
 			}
 		}
 	</style>
 </head>
-<body id="body">
+<section id="content">
 	<h1 class="title" :text="$page.title"></h1>
 	<div :html="$page.contentSection('about')"></div>
 	<div class="feed" :loop="$page.contentSections().slice(1)">
@@ -42,4 +42,4 @@
 			<ctx :html="$loop.it.htmlNoHeading()"></ctx>
 		</div>
 	</div>
-</body>
+</section>
