@@ -29,7 +29,7 @@ jobs:
         uses: kristoff-it/setup-zine@v2
 
       - name: Build
-        run: zine release
+        run: zine release -f
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
