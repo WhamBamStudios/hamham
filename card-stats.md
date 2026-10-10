@@ -1,0 +1,26 @@
+# Card Stats
+
+Card stats tell you what a card costs, how it fights, and which parts of your strategy it supports. Not every card uses every stat; a Spell does not need Unit Attack, and a Domain has no Unit-style Attack or Life.
+
+## Common card details
+
+- **Element:** the card’s primary elemental identity. It is not necessarily the Element used to pay its cost.
+- **Aeon Cost:** the amount and kinds of elemental resource needed to play the card or ability. See [Elemental Aeon](elemental-aeon.md).
+- **Rarity:** a collection classification such as Common, Uncommon, Rare, Epic, or Mythic. Rarity is not a combat stat and is separate from a Hero’s Limit Break rank.
+- **Rules Text:** special effects, conditions, timing, and choices that change how the card behaves.
+
+## Unit stats
+
+- **Attack:** the Unit’s combat damage value when it attacks or fights.
+- **Life / Health:** how much damage the Unit can take before it is defeated. Damage and healing change its current Life; its printed maximum is the starting reference.
+- **Position, Range, and Movement:** in lane or traversal encounters, where a Unit can stand and which targets it can reach are also important. Follow the battlefield markers and any range or movement text on the card.
+
+A newly played Unit is normally unable to attack or use an active ability that turn, but can block. **Charge** or **Haste** allows it to attack immediately.
+
+## Hero stats
+
+A Hero has **Life**, **Attack**, one or more **affinities**, and an **Aeon production** value. The Hero’s affinities determine which elemental pools receive its generated Aeon. Hero Power and Resolve abilities add more rules than the printed numbers alone; see [Hero Cards](hero-cards.md).
+
+## What the numbers do not tell you
+
+Keywords and card text can alter costs, combat eligibility, targeting, damage, or timing. Check the complete text before committing a card—especially when a rule says “if able,” “when,” or “until end of turn.”

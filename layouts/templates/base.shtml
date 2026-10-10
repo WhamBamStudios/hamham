@@ -46,6 +46,7 @@
 				<p class="nav-heading">Game menu</p>
 				<ul>
 					<li><a href="$site.page('').link()">Home</a></li>
+					<li><a href="$site.page('guides').link()">Player Guide</a></li>
 					<li><a href="$site.page('about').link()">About</a></li>
 					<ctx :if="$site.page('devlog').subpages().first?()">
 						<li><a href="$if.link()">Latest devlog</a></li>

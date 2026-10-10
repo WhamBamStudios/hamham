@@ -11,3 +11,12 @@ Welcome to the development log for **hamham**. This is where I’ll share concis
 - [Read the latest devlog]($link.page('devlog/2026'))
 - [Browse the devlog archive]($link.page('devlog'))
 - [Subscribe via RSS]($link.page('devlog').alternative('rss'))
+
+## New to WHAM! BAM! HAM-HAM!?
+
+Start with the [player guide]($link.page('guides')) for an introduction to the rules, campaign, side modes, cards, Heroes, and collection.
+
+- [First Match: Rules & Mechanics]($link.page('guides/getting-started'))
+- [Campaign Mode]($link.page('guides/campaign-mode'))
+- [Card Types]($link.page('guides/card-types'))
+- [Collection Binder]($link.page('guides/collection-binder'))

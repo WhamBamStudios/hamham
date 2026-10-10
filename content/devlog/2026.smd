@@ -12,3 +12,8 @@ You can [subscribe via RSS]($link.page('devlog').alternative('rss')) or browse t
 
 ## [The devlog begins]($section.id("2026-10-09T00:00:00"))
 The hamham devlog is open. I’ll use this space for concise updates as development continues.
+
+## [The player guide is open]($section.id("2026-10-09T12:00:00"))
+New to the game? The [WHAM! BAM! HAM-HAM! Player Guide]($link.page('guides')) is a player-first introduction to matches, Campaign Mode, side modes, card mechanics, Heroes, and collection features.
+
+Start with [First Match]($link.page('guides/getting-started')), then browse [Campaign Mode]($link.page('guides/campaign-mode')), [Card Types]($link.page('guides/card-types')), or [Sharding & Crafting]($link.page('guides/sharding-and-crafting')).

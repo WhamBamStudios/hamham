@@ -1,0 +1,32 @@
+# Elemental Aeon
+
+**Aeon** is the elemental resource you spend to play cards and activate abilities during a match. The game has six elemental pools. Your pools refresh at the start of each turn, then your Hero, Domains, and other card effects generate Aeon. Unspent Aeon does not carry over to your next turn.
+
+## The six Elements
+
+| Element | Short identity | Cost symbol |
+| --- | --- | --- |
+| Fire | Accelerates | F |
+| Water | Adapts | W |
+| Earth | Commits | E |
+| Air | Moves | A |
+| Light | Protects | L |
+| Dark | Manipulates | D |
+
+These are broad design identities, not hard restrictions: an individual card can always do something surprising if its text says so.
+
+## Reading a cost
+
+A cost can combine three kinds of symbols:
+
+- **Fixed Element:** must be paid with Aeon from that exact Element.
+- **Generic:** can be paid with any available Element.
+- **Paired:** can be paid with either of the two Elements shown.
+
+For example, a cost of **1 Fire + 1 Generic** needs at least one Fire Aeon and one additional Aeon from any pool. One point of Aeon cannot pay for two symbols. The game checks the full payment before the card is played.
+
+A Hero produces Aeon for each of its affinities during generation. A multi-affinity Hero therefore contributes to each listed pool. Units do not produce Aeon just because they have an Element; they need a card ability or effect that says they do.
+
+## Aeon and Elemental Shards are different
+
+Aeon is temporary match energy. **Elemental Shards** are persistent collection currency earned and spent between matches—for example, to craft cards or raise a Hero’s Limit Break rank. Shards are kept in separate elemental balances, so keep the two resources distinct when reading collection screens.

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+	<head id="head">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#081426">
+		<title>hamham — Game Devlog</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&amp;display=swap">
+		<link rel="stylesheet" href="/hamham/style.css">
+		<link rel="stylesheet" href="/hamham/highlight.css">
+		<!-- math rendering -->
+		<link rel="stylesheet" href="/hamham/Temml-Local.css">
+		<script defer src="/hamham/temml.min.js"></script>
+		<script defer src="/hamham/render-mathtex.js"></script>
+		<!-- /math rendering -->
+		
+
+	</head>
+	<body id="body">
+		<header class="site-header">
+			<div class="header-inner">
+				<h1 class="visually-hidden">WHAM! BAM! HAM-HAM! — game development log</h1>
+				<!-- Filename prefix is the draw order; keep each layer's z-index in sync. -->
+				<div class="splash-stage" aria-hidden="true">
+					<img class="splash-layer splash-blast" data-draw-order="0" style="--draw-order: 0" src="/hamham/CompanySplash/0_Blast.png" alt="" fetchpriority="high">
+					<img class="splash-layer splash-mascot" data-draw-order="1" style="--draw-order: 1" src="/hamham/CompanySplash/1_Mascot.png" alt="">
+					<img class="splash-layer splash-wham" data-draw-order="2" style="--draw-order: 2" src="/hamham/CompanySplash/2_WHAM.png" alt="">
+					<img class="splash-layer splash-bam" data-draw-order="3" style="--draw-order: 3" src="/hamham/CompanySplash/3_BAM.png" alt="">
+					<img class="splash-layer splash-studios" data-draw-order="5" style="--draw-order: 5" src="/hamham/CompanySplash/5_StudiosText.png" alt="">
+				</div>
+				<div class="header-copy">
+					<p class="eyebrow">The ham-ham devlog</p>
+					<p class="tagline">Punchy little game. Big ideas. Follow the build.</p>
+				</div>
+			</div>
+		</header>
+		<div id="banner">
+			<div class="banner-inner">
+				<span class="banner-note">Builds, blunders &amp; tiny victories.</span>
+				<span class="repo-link repo-link-disabled" aria-disabled="true">Game not hosted yet</span>
+			</div>
+		</div>
+		<div class="wrapper">
+			<nav class="site-nav" aria-label="Main navigation">
+				<p class="nav-heading">Game menu</p>
+				<ul>
+					<li><a href="/hamham/">Home</a></li>
+					<li><a href="/hamham/guides/">Player Guide</a></li>
+					<li><a href="/hamham/about/">About</a></li>
+					
+						<li><a href="/hamham/devlog/2026/">Latest devlog</a></li>
+					
+					<li><a href="/hamham/devlog/">Archive</a></li>
+				</ul>
+			</nav>
+			<section id="content" class="page-content">
+				
+	<div><h1>First Match: Rules & Mechanics</h1><h2>The goal</h2><p>A standard match seats two to four players. Protect your Hero and outlast the opposition. A player is eliminated when their Hero reaches 0 Life or they concede; the last Hero standing wins. If every remaining Hero is eliminated at the same time, the match is a draw.</p><h2>Starting a match</h2><p>You begin with a hand of six cards. When the match enables a mulligan, you may return any number of those cards and draw replacements before turn one. The first player starts the first turn without drawing an extra card; after that, a player normally draws one card at the start of each turn. If a deck runs out, drawing causes fatigue damage. The usual maximum hand size is six, with excess cards discarded at end of turn.</p><h2>A turn at a glance</h2><ol><li><strong>Start of Turn:</strong> resolve start-of-turn effects, ready eligible pieces, and reset once-per-turn actions.</li><li><strong>Environment:</strong> play one Domain from your hand or pass. Some effects can put a Domain into play outside this step.</li><li><strong>Aeon Generation:</strong> your Hero and other cards produce elemental Aeon for the turn.</li><li><strong>Draw:</strong> draw a card (except on turn one, when the opening hand already serves as your draw).</li><li><strong>Main:</strong> play cards, use eligible abilities, and activate your Hero Power.</li><li><strong>Combat / Attack:</strong> declare attackers. Defenders assign legal blockers; combat damage resolves after required block choices are complete.</li><li><strong>End of Turn:</strong> resolve end-of-turn effects, discard down to the hand limit if needed, and pass play.</li></ol><p>The game may skip a decision step when there is no legal choice to make. Timers or mode-specific settings can also affect how long a decision is available.</p><h2>The battlefield</h2><p>In the standard lane-enabled format, each side has five lanes with three positions in each lane. Position matters: card abilities, range, movement, and lane effects can change which attacks and targets are legal. A newly played Unit can usually block right away, but cannot attack or use an active ability on the turn it arrives unless it has <strong>Charge</strong> or <strong>Haste</strong>.</p><h2>Paying for cards</h2><p>Cards have an elemental Aeon cost. Some symbols require one named Element, some allow any Element, and paired symbols let you choose between two named Elements. See <a href="/hamham/guides/elemental-aeon/">Elemental Aeon</a> for the payment basics.</p><p>Playing a card is not always the end of the conversation: if an opponent has a legal, affordable response, an interrupt window may open. Combat, triggers, and card-specific text can create additional decisions.</p><h2>Learn next</h2><ul><li><a href="/hamham/guides/card-types/">Card Types</a> explains what each card does.</li><li><a href="/hamham/guides/card-stats/">Card Stats</a> covers the numbers on a card.</li><li><a href="/hamham/guides/card-mechanics-and-rules/">Card Mechanics & Rules</a> explains timing, abilities, and combat responses.</li></ul><hr><p><a href="/hamham/guides/">← All player guides</a></p></div>
+
+			</section>
+		</div>
+		<footer>
+			<p>Small game. Big swings. Built with <a href="https://zine-ssg.io/">Zine</a> and published on GitHub Pages.</p>
+			<p>Arcade styling tipped its hat to the <a href="https://github.com/pages-themes/leap-day">Leap Day theme</a>.</p>
+		</footer>
+	</body>
+</html>

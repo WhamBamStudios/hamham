@@ -1,0 +1,33 @@
+# Sharding & Crafting
+
+Extra cards can be turned into **Elemental Shards**, a persistent collection currency. Shards are stored by Element and can be used for card crafting, Hero progression, and other collection features.
+
+## Shard a card
+
+Sharding removes the selected card copies from your collection and grants shards matching the card’s primary Element. The base yield depends on rarity:
+
+| Card rarity | Base shards per copy |
+| --- | ---: |
+| Common | 1 |
+| Uncommon | 2 |
+| Rare | 4 |
+| Epic | 8 |
+| Mythic | 10 |
+
+Some collectible treatments change the yield. Check the preview for the exact amount before confirming; sharding is a permanent removal of those copies.
+
+## Craft a card
+
+Crafting turns Elemental Shards into one random collectible card matching filters you choose:
+
+1. Choose a **rarity**, **card type**, and **primary Element**.
+2. Review the shard cost and how many cards match those choices.
+3. Confirm to spend shards of the selected Element and receive one matching Standard collectible.
+
+Crafting does not let you pick a particular card. The cost depends on the rarity, type, and Element filters, so use the preview before spending. If no cards match the selection, that combination cannot be crafted.
+
+## Shards for Hero Limit Break
+
+A Hero’s collection rank-up uses shards matching its primary affinity. Rank-ups follow the Hero’s own progression, usually from None through R, SR, SSR, and UR. See [Hero Cards](hero-cards.md) for the default rank costs and what can improve.
+
+Remember: Elemental Shards are collection currency between matches. Aeon is temporary energy spent during a match. They share elemental names, but one does not substitute for the other.

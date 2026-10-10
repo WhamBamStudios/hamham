@@ -1,0 +1,22 @@
+# Trading & Auctions
+
+The Trade House lets players exchange collectible cards through listings rather than needing to be online at the same time. Market access depends on the build and its enabled account/server services.
+
+## Auctions
+
+An auction listing includes the cards being offered, a starting bid, and optionally a minimum winning bid or Buy Now price. Listings have a chosen duration; supported durations range from one hour up to thirty days. Buyers place bids using Elemental Shards. A Buy Now purchase ends the auction immediately when that option is present.
+
+Cards and bid currency are held while the listing is active. If you are outbid, your held bid is returned. When the auction completes, the buyer receives the listed cards and the seller receives the sale proceeds. Expired or withdrawn listings return unsold cards according to the market rules.
+
+## Direct trades and offers
+
+A trade listing can name the cards or shard amount the owner wants, or invite offers for the listed cards. Review the exact items and amounts before submitting an offer. The listing owner can decide whether an offer is acceptable; once a trade is accepted, the agreed cards and shards are exchanged.
+
+## Before you list or bid
+
+- Check the card quantity and collectible treatment; listed copies are held while the listing is active.
+- Read the starting bid, any minimum bid, Buy Now amount, requested trade items, and end time carefully.
+- Listing fees may apply and are paid in Elemental Shards. Review the confirmation screen before committing.
+- Never share account credentials to arrange a trade. Use the in-game market flow when it is available.
+
+The Trade House uses collection currency, not the temporary Aeon pool from a match. See [Elemental Aeon](elemental-aeon.md) for the difference.

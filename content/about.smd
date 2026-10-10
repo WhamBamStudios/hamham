@@ -10,4 +10,6 @@ This site is the development log for **hamham**. It collects short updates about
 
 The [latest devlog]($link.page('devlog/2026')) is organized by year. You can also [browse the archive]($link.page('devlog')) or [subscribe to its RSS feed]($link.page('devlog').alternative('rss')).
 
+New to the game? The [WHAM! BAM! HAM-HAM! Player Guide]($link.page('guides')) covers match rules, Campaign Mode, cards, Heroes, and collection features.
+
 The site is built with [Zine](https://zine-ssg.io/) and published with GitHub Pages.

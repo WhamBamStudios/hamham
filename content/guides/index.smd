@@ -1,0 +1,32 @@
+---
+.title = "WHAM! BAM! HAM-HAM! Player Guide",
+.date = .date("2026-10-09T00:00:00"),
+.layout = "guide.shtml",
+---
+
+# WHAM! BAM! HAM-HAM! Player Guide
+
+Welcome to the player guide. Start with the match basics, then explore the campaign, card systems, Heroes, and collection. Mode availability can vary by build or server; in-game card text and rules take precedence.
+
+## Start here
+
+- [First Match: Rules & Mechanics]($link.page('guides/getting-started'))
+- [Campaign Mode]($link.page('guides/campaign-mode'))
+- [Side Modes & Mini-Games]($link.page('guides/side-modes'))
+
+## Cards & combat
+
+- [Card Types]($link.page('guides/card-types'))
+- [Elemental Aeon]($link.page('guides/elemental-aeon'))
+- [Card Stats]($link.page('guides/card-stats'))
+- [Card Mechanics & Rules]($link.page('guides/card-mechanics-and-rules'))
+- [Hero Cards, Resolve & Limit Break]($link.page('guides/hero-cards'))
+
+## Your collection
+
+- [Collection Binder]($link.page('guides/collection-binder'))
+- [Deck Builder]($link.page('guides/deck-builder'))
+- [Trading & Auctions]($link.page('guides/trading-and-auctions'))
+- [Sharding & Crafting]($link.page('guides/sharding-and-crafting'))
+
+Aeon is temporary energy spent during a match; Elemental Shards are persistent collection currency between matches.
