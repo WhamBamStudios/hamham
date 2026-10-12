@@ -1,0 +1,44 @@
+---
+workspaces:
+  - "workspace-1790935759645-ieuf55l"
+type: "text"
+tags:
+  - "devlog"
+  - "CardBrawler"
+  - "combat"
+  - "interaction"
+categories: []
+created: "2026-10-12T10:25:05.574Z"
+modified: "2026-10-12T10:25:05.574Z"
+author: "Haalee"
+status: "draft"
+---
+# WHAM! BAM! Studios DevLog
+
+## October 11, 2026 — Combat Rules & Match Interaction
+
+Yesterday was a solid rules-and-controls pass for CardBrawler: the combat vocabulary got cleaner, and the desktop match screen took its first steps toward a shared interaction flow.
+
+### Combat keywords, tightened up
+
+Retired the old **Taunt/Vulnerable** terminology and aligned the rules around **Provoke**. Provoke now governs eligible blocker assignments rather than redirecting direct attacks. The pass also standardized **Merge → Consume**, **Doomed → Deathtouch**, and **Immortality → Invincible** across engine behavior, card data, UI glyphs, and documentation. Legacy keyword names were removed rather than left lurking as aliases.
+
+Aggro’s combat behavior was clarified too: Aggro blockers keep priority in damage assignment and grouped combat resolution. A regression test now checks that priority even when blockers are assigned out of order.
+
+### New card-action capability
+
+Added a `SkipTurnPhase` card action, with validation for which phases can be skipped and resolution paths for skipped Blocking, combat-damage assignment, and End-of-Turn work. Artifact activations also gained Hero Life costs, including affordability checks and an event recording the payment.
+
+### Match interaction groundwork
+
+Introduced a graphics-independent interaction coordinator for typed selection and cancellation, then routed the desktop screen’s existing selection state through it without changing target matching or command submission. Unit lane placement now uses a legal-choice provider to drive lane highlights and map a selected lane back to an existing legal command, preferring normal Energy payment when available.
+
+The interaction roadmap and smoke coverage were updated alongside the implementation. Validation recorded for the interaction work: the smoke suite passed and the DesktopGL build completed with zero warnings and zero errors.
+
+**Next:** continue the coordinator work by unifying targeted card and ability choices, while keeping legal-choice previews separate from authoritative engine validation.
+
+---
+
+### A note from the developer
+
+Well, that was a satisfyingly busy day at the workbench. We gave a few old keywords their proper names, taught combat to mind its Aggro, and got the first pieces of a tidier match-interaction flow in place. Nothing exploded, and the tests even had the good manners to pass. Tomorrow looks like more coordinator work: bringing targeted choices into the fold, one sensible step at a time. I’ll try not to let the lanes get ideas above their station.
