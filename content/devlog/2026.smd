@@ -4,19 +4,6 @@
 .layout = "devlog.shtml",
 ---
 []($section.id('about'))
-# About this Devlog
+# About the 2026 DevLog
 
-This is the development log for hamham: short updates on progress, experiments, and decisions as the game takes shape.
-
-You can [subscribe via RSS]($link.page('devlog').alternative('rss')) or browse the [devlog archive]($link.page('devlog')).
-
-## [October 11: Combat Rules & Match Interaction]($section.id("2026-10-11T23:36:10"))
-Combat keywords were tightened up, `SkipTurnPhase` and Hero Life activation costs were added, and the desktop match screen gained typed interaction state plus legal Unit-lane placement highlights. [Read the full October 11 devlog](<$link.page('devlog/2026-10-11-combat-rules-match-interaction')>).
-
-## [The devlog begins]($section.id("2026-10-09T00:00:00"))
-The hamham devlog is open. I’ll use this space for concise updates as development continues.
-
-## [The player guide is open]($section.id("2026-10-09T12:00:00"))
-New to the game? The [WHAM! BAM! HAM-HAM! Player Guide]($link.page('guides')) is a player-first introduction to matches, Campaign Mode, side modes, card mechanics, Heroes, and collection features.
-
-Start with [First Match]($link.page('guides/getting-started')), then browse [Campaign Mode]($link.page('guides/campaign-mode')), [Card Types]($link.page('guides/card-types')), or [Sharding & Crafting]($link.page('guides/sharding-and-crafting')).
+The 2026 development entries are now published as individual posts and listed automatically in the [DevLog archive]($link.page('devlog')). This page is the year overview; subscribe to the [RSS feed]($link.page('devlog').alternative('rss')) to follow new entries.

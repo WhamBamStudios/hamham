@@ -1,22 +1,8 @@
 ---
-.title = "hamham",
-.date = .date("2026-10-09T00:00:00"),
+.title = "WHAM! BAM! DevLog!",
+.description = "Follow the development of WHAM! BAM! HAM-HAM!, the Card Brawler from WHAM! BAM! Studios.",
+.date = .date("2026-10-12T00:00:00"),
 .layout = "index.shtml",
 ---
 
-# hamham
-
-Welcome to the development log for **hamham**. This is where I’ll share concise updates as the game takes shape.
-
-- [Read the latest devlog]($link.page('devlog/2026'))
-- [Browse the devlog archive]($link.page('devlog'))
-- [Subscribe via RSS]($link.page('devlog').alternative('rss'))
-
-## New to WHAM! BAM! HAM-HAM!?
-
-Start with the [player guide]($link.page('guides')) for an introduction to the rules, campaign, side modes, cards, Heroes, and collection.
-
-- [First Match: Rules & Mechanics]($link.page('guides/getting-started'))
-- [Campaign Mode]($link.page('guides/campaign-mode'))
-- [Card Types]($link.page('guides/card-types'))
-- [Collection Binder]($link.page('guides/collection-binder'))
+**WHAM! BAM! HAM-HAM!** is the Card Brawler in development at WHAM! BAM! Studios. This is the home base for the project: meet the game, catch up on the newest development entries, and follow along as the build takes shape.

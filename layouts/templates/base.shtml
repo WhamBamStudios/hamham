@@ -30,14 +30,14 @@
 					<img class="splash-layer splash-studios" data-draw-order="5" style="--draw-order: 5" src="$site.asset('CompanySplash/5_StudiosText.png').link()" alt="">
 				</div>
 				<div class="header-copy">
-					<p class="eyebrow">The ham-ham devlog</p>
-					<p class="tagline">Punchy little game. Big ideas. Follow the build.</p>
+					<p class="eyebrow">WHAM! BAM! DevLog!</p>
+					<p class="tagline">The making of WHAM! BAM! HAM-HAM! Card Brawler.</p>
 				</div>
 			</div>
 		</header>
 		<div id="banner">
 			<div class="banner-inner">
-				<span class="banner-note">Builds, blunders &amp; tiny victories.</span>
+				<span class="banner-note">CARD BRAWLER · Builds, blunders &amp; tiny victories.</span>
 				<span class="repo-link repo-link-disabled" aria-disabled="true">Game not hosted yet</span>
 			</div>
 		</div>
@@ -48,8 +48,8 @@
 					<li><a href="$site.page('').link()">Home</a></li>
 					<li><a href="$site.page('guides').link()">Player Guide</a></li>
 					<li><a href="$site.page('about').link()">About</a></li>
-					<ctx :if="$site.page('devlog').subpages().first?()">
-						<li><a href="$if.link()">Latest devlog</a></li>
+					<ctx :if="$site.page('devlog').subpagesByTag('devlog').first?()">
+						<li><a href="$if.link()">Latest entry</a></li>
 					</ctx>
 					<li><a href="$site.page('devlog').link()">Archive</a></li>
 				</ul>

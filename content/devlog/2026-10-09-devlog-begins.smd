@@ -1,0 +1,9 @@
+---
+.title = "The DevLog Begins",
+.description = "The WHAM! BAM! DevLog opens as a home for progress, experiments, and decisions behind the game.",
+.date = .date("2026-10-09T00:00:00"),
+.layout = "post.shtml",
+.tags = ["devlog", "CardBrawler"],
+---
+
+The WHAM! BAM! DevLog is open. I’ll use this space for concise updates as development continues and the game takes shape.

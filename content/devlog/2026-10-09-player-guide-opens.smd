@@ -1,0 +1,11 @@
+---
+.title = "The Player Guide Opens",
+.description = "A player-first guide to WHAM! BAM! HAM-HAM! is now available, covering matches, Campaign Mode, side modes, cards, Heroes, and collections.",
+.date = .date("2026-10-09T12:00:00"),
+.layout = "post.shtml",
+.tags = ["devlog", "CardBrawler"],
+---
+
+The [WHAM! BAM! HAM-HAM! Player Guide]($link.page('guides')) is open. It introduces matches, Campaign Mode, side modes, card mechanics, Heroes, and collection features.
+
+Start with [First Match]($link.page('guides/getting-started')), then browse [Campaign Mode]($link.page('guides/campaign-mode')), [Card Types]($link.page('guides/card-types')), or [Sharding & Crafting]($link.page('guides/sharding-and-crafting')).

@@ -1,5 +1,6 @@
 ---
-.title = "Devlog Archive",
+.title = "WHAM! BAM! DevLog Archive",
+.description = "Browse development entries for WHAM! BAM! HAM-HAM!, the Card Brawler from WHAM! BAM! Studios.",
 .date = .date("1990-01-01T00:00:00"),
 .layout = "devlog-archive.shtml",
 .alternatives = [.{
@@ -9,6 +10,6 @@
 }],
 ---
 
-This archive lists the hamham development log by year. Open the [current devlog]($link.page('devlog/2026')) for the latest updates, or [subscribe via RSS]($link.alternative('rss')).
+Follow the development of **WHAM! BAM! HAM-HAM!**, the Card Brawler from WHAM! BAM! Studios. Every dated entry is listed below automatically, newest first; year overviews are available below the entries.
 
-Looking for a player introduction? Browse the [WHAM! BAM! HAM-HAM! Player Guide]($link.page('guides')), including [match rules]($link.page('guides/getting-started')), [Heroes]($link.page('guides/hero-cards')), and [collection guides]($link.page('guides/collection-binder')).
+Browse the [WHAM! BAM! HAM-HAM! Player Guide]($link.page('guides')) or [subscribe via RSS]($link.alternative('rss')).

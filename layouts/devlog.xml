@@ -6,18 +6,14 @@
     <generator>Zine -- https://zine-ssg.io</generator>
     <language>en-US</language>
     <lastBuildDate :text="$build.generated.formatHTTP()"></lastBuildDate>
-    <ctx :loop="$page.subpages()">
-      <ctx :if="$loop.it.layout.eql('devlog.shtml')">
-        <ctx :loop="$loop.it.contentSections().slice(1)">
-          <item>
-            <title :text="$loop.it.heading()"></title>
-            <description :text="$loop.it.html()"></description>
-            <link :text="$site.host_url.addPath($loop.up().it.linkRef($loop.it.id))"></link>
-            <pubDate :text="$loop.it.id.parseDate().formatHTTP()"></pubDate>
-            <guid :text="$site.host_url.addPath($loop.up().it.linkRef($loop.it.id))"></guid>
-          </item>
-        </ctx>
-      </ctx>
+    <ctx :loop="$page.subpagesByTag('devlog')">
+      <item>
+        <title :text="$loop.it.title"></title>
+        <description :text="$loop.it.description"></description>
+        <link :text="$site.host_url.addPath($loop.it.link())"></link>
+        <pubDate :text="$loop.it.date.formatHTTP()"></pubDate>
+        <guid :text="$site.host_url.addPath($loop.it.link())"></guid>
+      </item>
     </ctx>
   </channel>
 </rss>
