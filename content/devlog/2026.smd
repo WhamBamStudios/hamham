@@ -10,6 +10,9 @@ This is the development log for hamham: short updates on progress, experiments, 
 
 You can [subscribe via RSS]($link.page('devlog').alternative('rss')) or browse the [devlog archive]($link.page('devlog')).
 
+## [October 11: Combat Rules & Match Interaction]($section.id("2026-10-11T23:36:10"))
+Combat keywords were tightened up, `SkipTurnPhase` and Hero Life activation costs were added, and the desktop match screen gained typed interaction state plus legal Unit-lane placement highlights. [Read the full October 11 devlog](<$link.page('devlog/2026-10-11-combat-rules-match-interaction')>).
+
 ## [The devlog begins]($section.id("2026-10-09T00:00:00"))
 The hamham devlog is open. I’ll use this space for concise updates as development continues.
 
