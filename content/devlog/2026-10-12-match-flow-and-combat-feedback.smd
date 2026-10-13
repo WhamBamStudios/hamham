@@ -1,0 +1,35 @@
+---
+.title = "Match Flow & Combat Feedback",
+.description = "An October 12 CardBrawler update on shared match interactions, clearer combat cues, activity tracking, and rendering polish.",
+.date = .date("2026-10-12T23:59:00"),
+.layout = "post.shtml",
+.tags = ["devlog", "CardBrawler"],
+---
+
+October 12 was a broad pass over how CardBrawler communicates a match: choices became more consistent, combat got clearer feedback, and a few rough presentation edges were trimmed back.
+
+# Match choices, one flow
+
+The desktop match interaction coordinator now covers targeted card and ability choices, Unit movement, and blocker assignments. Each path offers choices from commands the engine already considers legal, while the existing command validation remains authoritative. Clicks and drags converge on the same selection and confirmation flow where it makes sense.
+
+Cancellation and outcomes got attention too. Escape and right-click can clear staged interactions, and accepted versus rejected commands now leave more useful feedback instead of letting a success message paper over a rejection. Minimal interaction diagnostics record command outcomes and cancellations without logging card names or instance IDs.
+
+# Combat gets clearer cues
+
+Intercept now has a distinct presentation during blocker choice: ordinary eligible blockers get a cyan edge, while eligible adjacent-lane candidates get an amber pulse. The cue explains why a blocker is available; it does not change the rules or resolve a block on its own.
+
+Legal targets and destinations received clearer highlights, and short atlas-backed toasts call out attacks, blocks, movement, and other interaction events. The activity rail now gives separate entries to public attacks, blocks, damage, destruction, and card effects. Pending attacks wait until their outcome is known, and private events stay private. Card status overlays also gained a clearer priority: action states take the top slot briefly, with the latest active Buff and Debuff shown beneath afterward.
+
+# A few fixes behind the scenes
+
+A slow final save could pause the losing player's board presentation before the results transition. The board and presentation scheduler now keep updating while that save finishes. We also removed the Aeon-generation projectile animation until suitable animated art is available, keeping the local EnergyPool pulse in the meantime. And the Design Suite's rendering-hardening work began with making the Card Material Lab lifecycle restore its settings cleanly.
+
+Smoke coverage was added across these changes, and the DesktopGL build passed with zero warnings and zero errors. An interactive visual pass on the new combat cues is still outstanding.
+
+**Next:** continue the Design Suite GUI migration, with particular care around replacing the movable World Space property editor, then give the new presentation a visual pass.
+
+---
+
+# A note from the developer
+
+That was a lot of small signals teaching the same lesson: a match should tell you what it’s doing while it’s doing it. The rules still get the final say, the UI is getting better at showing its homework, and the board no longer freezes while the save politely takes its time. Next up: more Design Suite work—and a visual check, because pixels remain stubbornly unpersuaded by passing tests.
