@@ -1,0 +1,37 @@
+---
+.title = "A More Responsive Match & A Clearer Board",
+.description = "October 14–16 brought clearer battlefield lanes, a livelier Prototype Match screen, a more responsive opponent, and sharper atlas-driven card feedback to CardBrawler.",
+.date = .date("2026-10-16T23:59:00"),
+.layout = "post.shtml",
+.tags = ["devlog", "CardBrawler"],
+---
+
+Three days, plenty of moving parts. CardBrawler’s match flow got easier to read, the Prototype Match screen became more self-sufficient, and the opponent stopped monopolizing the UI while it thought. The underlying rules stayed in charge; the presentation is getting better at showing its work.
+
+# October 14 — Lanes line up
+
+Blockers and attackers now use the same battlefield column index on both sides, so a lane means the same thing to the rules and to the board no matter who controls it. Domain exposure was also brought into line with the Domain’s bound row, with focused rule and test updates.
+
+The new Prototype Match screen continued its move toward shared HUD components, and gained a targeting-arc renderer. We also corrected the multisampling preference bug and restored the HDR/SDR and bloom changes after trimming back display effects that weren’t earning their keep.
+
+# October 15 — Turns keep moving
+
+Opponent decisions now run in the background against a cloned match state. If the live match changes before a decision returns, that stale result is discarded. A separate planner fix stops simulation when a lethal action ends the match, rather than revisiting the finished state indefinitely. A regression test now covers that lethal-action case.
+
+The Prototype Match controls grew into a more coherent flow: Domains follow their bound Front, Mid, or Back row; Unit placement highlights only eligible player-side slots; and card movement begins from the position the prototype actually rendered. Tap and Domain-travel animations, shared match-start overlays, card inspection, and Main Phase activated abilities with staged Aeon payment all joined the screen.
+
+We also tightened the vocabulary in the codebase: resource cards now use `CardType.Domain`, and the obsolete Domain type-class and transitional placement command were removed. The loading screen now stays up through asynchronous preparation and installation, then fades over the ready screen instead of disappearing early and leaving everyone to contemplate a blank board.
+
+# October 16 — Atlas feedback takes the board
+
+PrototypeMatchScreen’s layout now comes from 48 atlas-backed board slots. Those slot bounds drive card placement, animation destinations, hit testing, and tinted targeting or hover cues, replacing the old anchor-array approach. Placement highlights respect both card type and controller side; invalid Artifact drops now get a cursor-level error toast.
+
+The Activity Tracker became more useful in a crowded match: repeated identical events collapse into a counted entry, while the five-entry rail keeps a recent event from each player visible. Compact cards were rebuilt from atlas regions with scaled, masked art and focused Attack, Health, and rarity indicators. Unit cards also gained pulsing attack/block overlays and short-lived effects for Equipment, Spells, Enchants, and Exposure. One small but important correction: an attacked Unit is no longer mistaken for a blocker.
+
+The result is a board that gives more specific feedback without turning every interaction into a lecture. A welcome development; the cards are quite capable of being dramatic on their own.
+
+---
+
+# A note from the developer
+
+This stretch was mostly about making the match feel like one system instead of several screens sharing a table by coincidence. Lanes now agree, the prototype remembers where its cards actually were, and the AI can think without freezing the room. Then the atlas work gave all those choices a clearer visual home. There’s still room for an in-game polish pass, but the board is getting much better at saying what it means—and, on a good day, meaning it.
